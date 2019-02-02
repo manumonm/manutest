@@ -42,10 +42,13 @@ class LeadController extends Controller {
 
         /**
          * Checking the validation success. */
+		 
         if ($validatedData) {
+			
+	    /* Data inserting to lead table.
+	    */
             DB::table('leads')->insert(['firstname' => $request->firstname, 'lastname' => $request->lastname, 'address' => $request->address,
                 'phonenumber' => $request->phonenumber, 'squarefeet' => $request->squarefeet, 'email' => $request->email]);
-            $message = "successfully Added";
         }
 
         return redirect()->back()->withSuccess('Leads Successfully Added!.');
