@@ -17,7 +17,7 @@
 
                         @foreach ($users as $indexKey=>$user)
                         <tr>
-                            <td>  {{ $user->firstname }} </td>
+                            <td>  {{ $user->firstname }} {{ $user->lastname }}</td>
                             <td>  {{ $user->phonenumber }} </td>
                             <td>
                                 <a href="{{ url("home/view/$user->id") }}" class="btn btn-xs btn-info pull-right">Detail Info</a>
