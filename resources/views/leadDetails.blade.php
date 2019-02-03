@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard<small class="float-right"><a href="{{ url('home') }}"><< Back To List</a></small></div>
+                <div class="card-header">Lead Details<small class="float-right"><a href="{{ url('home') }}"><< Back To List</a></small></div>
 
                 <div class="card-body">
                     <table class="table">
